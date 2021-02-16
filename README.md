@@ -1,3 +1,12 @@
+
+This repository is intended for my own use in completing Udacity coursework and projects.
+
+I've forked it because package specifications contained in /environments/python-3.8.yaml required some selective editing for a created Anaconda environment to work as intended.
+
+===
+
+Original contents of README.md:
+
 Identify Fraud from Enron Email - Starter Code for Python 3.8 
 ==============
 
@@ -26,3 +35,7 @@ I offer no guarantees that will work or will be accepted by reviewers.
 If you find it useful and feel like buying me a coffee, the link is below.
 
 [![Buy me a coffee](bmc-button.png)](https://www.buymeacoffee.com/oforero)
+
+===
+
+Buy him a coffee.
