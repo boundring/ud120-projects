@@ -18,3 +18,4 @@ Enron_01
 datasets_questions/explore_enron_data.py
 datasets_questions/.vscode/settings.json
 datasets_questions/explore_enron_data.py
+regression/finance_regression.py
