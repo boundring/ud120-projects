@@ -3,19 +3,12 @@
 *.gz
 *.csv
 *.bak
+*.pkl
 
 maildir/
 images/
 
-text_learning/your_word_data.pkl
-text_learning/your_email_authors.pkl
-my_classifier.pkl
-my_dataset.pkl
-my_feature_list.pkl
 
 .DS_Store
 Enron_01
-datasets_questions/explore_enron_data.py
 datasets_questions/.vscode/settings.json
-datasets_questions/explore_enron_data.py
-regression/finance_regression.py
