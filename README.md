@@ -1,7 +1,7 @@
 
 This repository is intended for my own use in completing Udacity coursework and projects.
 
-I've forked it because package specifications contained in /environments/python-3.8.yaml required some selective editing for a created Anaconda environment to work as intended.
+I've forked it because package specifications contained in /environments/python-3.8.yaml required some selective editing for a created Anaconda environment to work as intended, and I'd be happy if another student seeking out help with those issues could find this repo for reference.
 
 ===
 
