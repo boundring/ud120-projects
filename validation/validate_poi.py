@@ -15,18 +15,31 @@ import sys
 sys.path.append("../tools/")
 from feature_format import featureFormat, targetFeatureSplit
 
-data_dict = pickle.load(open("../final_project/final_project_dataset.pkl", "r") )
+data_dict = pickle.load(open("../final_project/final_project_dataset.pkl", "rb") )
 
 ### first element is our labels, any added elements are predictor
 ### features. Keep this the same for the mini-project, but you'll
 ### have a different feature list when you do the final project.
 features_list = ["poi", "salary"]
 
-data = featureFormat(data_dict, features_list)
+data = featureFormat(data_dict, features_list, sort_keys = '../tools/python2_lesson13_keys.pkl')
 labels, features = targetFeatureSplit(data)
 
 
-
 ### it's all yours from here forward!  
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+from sklearn import model_selection
 
+clf = DecisionTreeClassifier()
+clf.fit(features, labels)
+print("Un-split data score:", clf.score(features, labels))
+# output: "Un-split data score: 0.9894736842105263"
 
+# adding train/test split
+features_train, features_test, labels_train, labels_test = model_selection.train_test_split(features, labels, test_size=0.3, random_state=42)
+
+clf = DecisionTreeClassifier()
+clf.fit(features_train, labels_train)
+print("Split data score:", clf.score(features_test, labels_test))
+# output: "Split data score: 0.7241379310344828"
